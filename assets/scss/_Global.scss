@@ -444,7 +444,7 @@ p {
 		height: calc(100vh - 70px);
 		overflow: auto;
 		width: 100%;
-		padding: 40px 15px 20px 315px;
+		padding: 60px 15px 20px 315px;
 		@include transition(padding 0.4s);
 		.mainTitle {
 			color: $primary-color;
@@ -577,23 +577,39 @@ p {
 	/* Gateway page */
 	.dashboardWrapper {
 		.sidebartoggleBtn {
-			left: 200px;
+			left: 0px;
+			i{
+				font-size: 48px;
+				&.fa-angle-right{
+					display: block;
+				}
+				&.fa-angle-left{
+					display: none;
+				}
+			}
+			&.active{
+				left: 200px;
+				.fa-angle-right{
+					display: none;
+				}
+				.fa-angle-left{
+					display: block;
+				}
+			}
 		}
 		/* Side Panel */
 		.sidePanel{
 			width: 200px;
 			position: absolute;
 			z-index: 99;
+			left: -200px;
 			&.collapsed{
-				left: -200px;
+				left: 0;
 			}
 		}
 		/* Main Container */
 		.rightCntr {
-			padding: 40px 15px 20px 15px;
-			&.expend{
-				padding-left: 15px;
-			}
+			padding-left: 15px;
 		}
 	}
 }

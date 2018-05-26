@@ -588,7 +588,7 @@ p {
     height: calc(100vh - 70px);
     overflow: auto;
     width: 100%;
-    padding: 40px 15px 20px 315px;
+    padding: 60px 15px 20px 315px;
     transition: padding 0.4s;
     -webkit-transition: padding 0.4s;
     -moz-transition: padding 0.4s;
@@ -695,17 +695,28 @@ p {
     /* Side Panel */
     /* Main Container */ }
     .dashboardWrapper .sidebartoggleBtn {
-      left: 200px; }
+      left: 0px; }
+      .dashboardWrapper .sidebartoggleBtn i {
+        font-size: 48px; }
+        .dashboardWrapper .sidebartoggleBtn i.fa-angle-right {
+          display: block; }
+        .dashboardWrapper .sidebartoggleBtn i.fa-angle-left {
+          display: none; }
+      .dashboardWrapper .sidebartoggleBtn.active {
+        left: 200px; }
+        .dashboardWrapper .sidebartoggleBtn.active .fa-angle-right {
+          display: none; }
+        .dashboardWrapper .sidebartoggleBtn.active .fa-angle-left {
+          display: block; }
     .dashboardWrapper .sidePanel {
       width: 200px;
       position: absolute;
-      z-index: 99; }
+      z-index: 99;
+      left: -200px; }
       .dashboardWrapper .sidePanel.collapsed {
-        left: -200px; }
+        left: 0; }
     .dashboardWrapper .rightCntr {
-      padding: 40px 15px 20px 15px; }
-      .dashboardWrapper .rightCntr.expend {
-        padding-left: 15px; } }
+      padding-left: 15px; } }
 @media only screen and (max-width: 767px) {
   .mg-x-b0 {
     margin-bottom: 0px; }
