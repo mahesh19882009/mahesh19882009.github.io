@@ -686,7 +686,7 @@ p {
       .dashboardWrapper .sidePanel.collapsed {
         left: -200px; }
     .dashboardWrapper .rightCntr {
-      padding: 40px 15px 20px 215px; }
+      padding: 60px 15px 20px 215px; }
       .dashboardWrapper .rightCntr.expend {
         padding-left: 15px; } }
 @media only screen and (max-width: 991px) {
