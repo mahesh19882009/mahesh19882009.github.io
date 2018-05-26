@@ -1,0 +1,57 @@
+/* Colors */
+$transparent-color: transparent;
+$light-color: #ffffff;
+$dark-color: #000000;
+$primary-color: #f94b44;
+$secondary-color: #6d1214;
+$tertiary-color: #006666;
+$quaternary-color: #333333;
+$quinary-color: #80b6c5;
+$senary-color: #585858;
+$septenary-color: #929292;
+$octonary-color: #d1b944;
+$nonary-color: #e9e9e9;
+$decimal-color: #f1e9e6;
+$decimal2-color: #f9f9f9;
+$text-color: #333;
+$border-color: #ccc;
+
+/* Fonts */
+$Regular-text: 'SegoeUI';
+$Bold-text: 'SegoeUI-Bold';
+$SemiLight-text: 'SegoeUI-Semilight';
+$BoldItalic-text: 'SegoeUI-BoldItalic';
+$SemiBold-text: 'SegoeUI-SemiBold';
+$LightItalic-text: 'SegoeUI-LightItalic';
+$SemilightItalic-text: 'SegoeUI-SemilightItalic';
+$BlackItalic-text: 'SegoeUI-BlackItalic';
+$Black-text: 'SegoeUI-Black';
+$Italic-text: 'SegoeUI-Italic';
+$SemiboldItalic-text: 'SegoeUI-SemiboldItalic';
+$Light-text: 'SegoeUI-Light';
+
+
+/* mixins */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin boxshadow($boxshadow){
+	box-shadow: $boxshadow;
+	-webkit-box-shadow: $boxshadow;
+	-moz-box-shadow: $boxshadow;
+	-o-box-shadow: $boxshadow;
+	-ms-box-shadow: $boxshadow;
+}
+
+@mixin transition($transition){
+	transition: $transition;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+}

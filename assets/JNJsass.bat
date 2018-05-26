@@ -1,0 +1,1 @@
+sass --watch "C:\Users\MDS\Desktop\JNJ\assets\scss\JNJ_master.scss":"C:\Users\MDS\Desktop\JNJ\assets\css\JNJ_master.css"
