@@ -5,6 +5,9 @@ $(document).ready(function(e) {
 		$('.rightCntr').toggleClass('expend');
 		$(this).toggleClass('active');
 	});
+	$('.listviewArea .toggleView').click(function(){
+		$(this).parent().find('.tableArea').toggleClass('responsiveView');
+	});
 });
 
 

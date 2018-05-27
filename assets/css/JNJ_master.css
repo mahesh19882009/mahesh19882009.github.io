@@ -672,7 +672,110 @@ p {
     background: #f94b44;
     color: #ffffff; }
 .jnjTabs .tab-content {
-  padding: 15px; }
+  padding: 15px 0; }
+
+/* Table view */
+.listviewArea {
+  overflow: auto; }
+  .listviewArea .tableArea {
+    width: 100%; }
+    .listviewArea .tableArea .list-row {
+      display: table;
+      width: 100%; }
+      .listviewArea .tableArea .list-row .col {
+        padding: 12px 10px;
+        color: #333;
+        font-size: 14px;
+        display: table-cell;
+        vertical-align: middle; }
+        .listviewArea .tableArea .list-row .col.col-5 {
+          width: 5%; }
+        .listviewArea .tableArea .list-row .col.col-10 {
+          width: 10%; }
+        .listviewArea .tableArea .list-row .col.col-15 {
+          width: 15%; }
+        .listviewArea .tableArea .list-row .col.col-20 {
+          width: 20%; }
+        .listviewArea .tableArea .list-row .col.col-25 {
+          width: 25%; }
+        .listviewArea .tableArea .list-row .col.col-30 {
+          width: 30%; }
+        .listviewArea .tableArea .list-row .col.col-35 {
+          width: 35%; }
+        .listviewArea .tableArea .list-row .col.col-40 {
+          width: 40%; }
+        .listviewArea .tableArea .list-row .col.col-45 {
+          width: 45%; }
+        .listviewArea .tableArea .list-row .col.col-50 {
+          width: 50%; }
+        .listviewArea .tableArea .list-row .col.col-55 {
+          width: 55%; }
+        .listviewArea .tableArea .list-row .col.col-55 {
+          width: 60%; }
+        .listviewArea .tableArea .list-row .col.col-65 {
+          width: 65%; }
+        .listviewArea .tableArea .list-row .col.col-55 {
+          width: 70%; }
+        .listviewArea .tableArea .list-row .col.col-75 {
+          width: 75%; }
+        .listviewArea .tableArea .list-row .col.col-55 {
+          width: 80%; }
+        .listviewArea .tableArea .list-row .col.col-85 {
+          width: 85%; }
+        .listviewArea .tableArea .list-row .col.col-55 {
+          width: 90%; }
+        .listviewArea .tableArea .list-row .col.col-95 {
+          width: 95%; }
+        .listviewArea .tableArea .list-row .col.col-100 {
+          width: 100%; }
+    .listviewArea .tableArea .listHead {
+      width: 100%; }
+      .listviewArea .tableArea .listHead .list-row {
+        background: #f94b44; }
+        .listviewArea .tableArea .listHead .list-row .col {
+          color: #ffffff;
+          font-weight: 600; }
+    .listviewArea .tableArea .listBody {
+      width: 100%; }
+      .listviewArea .tableArea .listBody .list-row {
+        border-bottom: 1px solid #ccc; }
+        .listviewArea .tableArea .listBody .list-row .col {
+          color: #333;
+          font-weight: 400;
+          margin: 0 -1px; }
+        .listviewArea .tableArea .listBody .list-row:hover {
+          background: rgba(249, 75, 68, 0.1); }
+    .listviewArea .tableArea.responsiveView .listHead {
+      display: none; }
+    .listviewArea .tableArea.responsiveView .listBody .list-row {
+      display: block;
+      padding: 5px 0;
+      margin-bottom: 5px; }
+      .listviewArea .tableArea.responsiveView .listBody .list-row .col {
+        display: block;
+        position: relative;
+        padding: 10px 40px 10px 50%;
+        margin-right: 0;
+        min-height: 32px;
+        width: 100%;
+        text-align: left; }
+        .listviewArea .tableArea.responsiveView .listBody .list-row .col:before {
+          position: absolute;
+          left: 20px;
+          top: 5px;
+          content: attr(data-titleName);
+          width: 50%;
+          font-weight: 600;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          padding-right: 30px; }
+  .listviewArea .paginationBlock .pagination li a {
+    border-color: #f94b44;
+    color: #f94b44; }
+  .listviewArea .paginationBlock .pagination li.active a {
+    background: #f94b44;
+    color: #ffffff; }
 
 @media only screen and (max-width: 1199px) {
   /* Gateway page */
@@ -779,7 +882,10 @@ p {
       .node-data .moveAction .fa-forward {
         transform: rotate(90deg); }
       .node-data .moveAction .fa-backward {
-        transform: rotate(90deg); } }
+        transform: rotate(90deg); }
+
+  .listviewArea .paginationBlock .pagination li a {
+    padding: 3px 9px; } }
 #headerCntr .navbar {
   background: #f94b44;
   border: 0;
